@@ -124,8 +124,11 @@ Joined datasets on dbn to merge demographics with performance.
 🛠️ Technologies Used
 
 Python 3.x (Pandas, Matplotlib, Psycopg2/SQLAlchemy)
+
 PostgreSQL for structured storage & querying
+
 Google Sheets for quick cleaning & analysis
+
 Jupyter Notebook for interactive exploration
 
 🚀 How to Run
