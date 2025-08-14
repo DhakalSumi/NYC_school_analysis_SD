@@ -29,7 +29,9 @@ graduation_rate
 attendance_rate
 
 Before vs. After Outlier Removal
+
 Metric	Before Cleaning	After Cleaning
+
 Total Rows	450	437
 SAT Critical Reading Avg	180 – 900	200 – 800
 SAT Math Avg	180 – 950	200 – 800
@@ -40,6 +42,7 @@ Attendance Rate (%)	0% – 140%	60% – 100%
 📌 Outliers such as SAT scores above 800 or rates above 100% were removed to keep data within logical ranges.
 
 Final Data Schema
+
 Column Name	Type	Description
 dbn	TEXT	Unique school code (District Borough Number).
 school_name	TEXT	Official name of the school.
@@ -51,6 +54,7 @@ attendance_rate	FLOAT	% of students attending school regularly (0–100).
 academic_tier_rating	INTEGER	School’s performance tier (1–4), may be null.
 
 How to Run
+
 Load the raw SAT dataset.
 Run clean_sat_data.py to:
 Normalize column names.
@@ -60,10 +64,12 @@ Remove statistical outliers.
 Save the cleaned dataset.
 
 View results in:
+
 CSV file: nyc_schools_sat_cleaned.csv
 Database table: nyc_schools.sumi_sat_results_cleaned (PostgreSQL, schema: nyc_schools).
 
 Why This Matters
+
 Ensures all SAT scores are within valid ranges.
 Removes unrealistic graduation/attendance rates.
 Produces a reliable dataset for educational performance analysis.
